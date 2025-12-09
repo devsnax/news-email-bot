@@ -18,8 +18,8 @@ html_items = ""
 ## Mail Formatting
 for headline, summary in zip(headlines, summaries):
     html_items += f"""
-                    <div style="margin-top: 20px; border-bottom: 1px solid;"
-                        <h2 style="margin: 0; font-size: 20px;"><b>{headline.text}</b></h2>
+                    <div style="margin-top: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+                        <h2 style="margin: 0; font-size: 20px; font-weight: bold;">{headline.text}</h2>
                             <p style="font-size: 15px;">{summary.text}</p>\n
                     </div>
                   """
