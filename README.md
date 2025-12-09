@@ -9,9 +9,11 @@ Click “Fork” in the top-right corner to create your own copy.
 Set up your environment variables
 Go to Settings → Secrets → Actions in your fork, and add the following secrets:
 
-`SMTP_PASSWORD` → Your email password or app-specific password
+`SMTP_PASSWORD` → Your email app-specific password. If Gmail, must enable 2FA to create and view App Password
 
-`SMTP_USER` → Your email address
+`EMAIL_SENDER` → Your sending email address
+
+`EMAIL_RECEIVER` → Your receiving email address
 
 NB: To use another SMTP server, replace `smtp.gmail.com` with your preferred SMTP server in line 51
 
@@ -28,3 +30,5 @@ python3 main.py
 
 Optional: Automate daily emails
 Set up GitHub Actions (already included in this repo) or use a local scheduler like cron.
+
+Arigato!
