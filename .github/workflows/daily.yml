@@ -26,7 +26,7 @@ jobs:
     - name: Run script
       env:
         EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
-        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        EMAIL_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
       run: |
         python3 main.py
