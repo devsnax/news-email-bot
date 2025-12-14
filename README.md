@@ -11,11 +11,11 @@ Go to Settings → Secrets → Actions in your fork, and add the following secre
 
 `SMTP_PASSWORD` → Your email app-specific password. If Gmail, must enable 2FA to create and view App Password
 
-`EMAIL_SENDER` → Your sending email address
+`EMAIL_SENDER` → Your sending email address. Must be the email address for the SMTP password.
 
 `EMAIL_RECEIVER` → Your receiving email address
 
-NB: To use another SMTP server, replace `smtp.gmail.com` with your preferred SMTP server in line 51
+NB: To use another SMTP server, replace `smtp.gmail.com` with your preferred SMTP server in `config.py`
 
 Install dependencies
 
