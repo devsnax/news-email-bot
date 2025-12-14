@@ -1,6 +1,6 @@
 def formatText(text):
+    html_items = ""
     for headline, summary in text:
-        html_items = ""
         html_items += f"""
                         <div style="margin-top: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
                             <h2 style="margin: 0; font-size: 20px; font-weight: bold;">{headline.text}</h2>
